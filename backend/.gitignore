@@ -1,0 +1,38 @@
+# Maven build output
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot specific
+# HELP.md # Əgər bu fayl layihənin sənədləşməsinin bir hissəsidirsə, bu sətri silin.
+          # Əks halda, avtomatik yaranan bir fayldırsa, qala bilər.
+          # Adətən HELP.md Git-ə daxil edilir.
+
+### IDE specific files ###
+# STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/ # NetBeans-in build qovluğunu ignore edir
+
+# VS Code
+.vscode/
+
+# Logs
+*.log

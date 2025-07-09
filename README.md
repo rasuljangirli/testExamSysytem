@@ -1,4 +1,4 @@
-# Lahiyə öncəsi demo proje
+# Əsas Lahiyə öncəsi demo
 
 Bu layihə **real layihə** öncəsi test məqsədi ilə əsas funksionallıqların yoxlanması üçün hazırlanıb.
 

@@ -18,7 +18,6 @@ import java.util.List;
 public class QuestionController {
     private final QuestionService questionService;
 
-    // 1) Yeni sual+options yaratmaq
     @PostMapping("/create")
     public ResponseEntity<Question> createQuestion(@RequestBody QuestionDTO dto) {
         Question created = questionService.createQuestion(dto);
@@ -27,10 +26,6 @@ public class QuestionController {
                 .body(created);
     }
 
-    // 2) Bir imtahana aid bütün sualları gətirmək (opsional)
-
-
-    // 3) İmtahan cavablarını yoxlamaq (POST)
     @PostMapping("/evaluate")
     public ResponseEntity<ResultDTO> evaluateExamSubmission(@RequestBody AnswerSubmissionDTO submissionDTO) {
         ResultDTO resultDTO = questionService.evaluateSubmission(submissionDTO);
@@ -39,7 +34,6 @@ public class QuestionController {
                 .body(resultDTO);
     }
 
-    // 4) İstifadəçinin imtahan nəticələrini gətirmək (GET)
     @GetMapping("/result/{userToken}/{examId}")
     public ResponseEntity<ResultDTO> getUserExamResult(
             @PathVariable String userToken,
